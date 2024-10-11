@@ -28,7 +28,7 @@
 #include "mixer.h"
 #include "utility/dspinst.h"
 
-#if defined(__ARM_ARCH_7EM__)
+#if defined(__ARM_ARCH_7EM__) || defined(PICO_RP2350) || defined(PICO_RP2040)
 #define MULTI_UNITYGAIN 65536
 
 static void applyGain(int16_t *data, int32_t mult)

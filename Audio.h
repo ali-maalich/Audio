@@ -58,7 +58,7 @@
 // include all the library headers, so a sketch can use a single
 // #include <Audio.h> to get the whole library
 //
-#include "analyze_fft256.h"
+/*#include "analyze_fft256.h"
 #include "analyze_fft1024.h"
 #include "analyze_print.h"
 #include "analyze_tonedetect.h"
@@ -128,6 +128,7 @@
 #include "play_sd_wav.h"
 #include "play_serialflash_raw.h"
 #include "record_queue.h"
+*/
 #include "synth_tonesweep.h"
 #include "synth_sine.h"
 #include "synth_waveform.h"
