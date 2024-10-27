@@ -1,0 +1,11 @@
+#define KIN1_DWT_CONTROL             (*((volatile uint32_t*)0xE0001000))
+#define KIN1_DWT_CYCCNT              (*((volatile uint32_t*)0xE0001004))
+#define KIN1_DEMCR                   (*((volatile uint32_t*)0xE000EDFC))
+#define KIN1_TRCENA_BIT              (1UL<<24)
+#define KIN1_DWT_CYCCNTENA_BIT       (1UL<<0)
+
+void rp2350_init_cyccnt() {
+    KIN1_DEMCR |= KIN1_TRCENA_BIT;
+    KIN1_DWT_CONTROL |= KIN1_DWT_CYCCNTENA_BIT;
+}    
+
